@@ -1,0 +1,26 @@
+$fs-big: 2.8rem;
+$fs-medium: 1.75rem;
+$fs-small: 1.3rem;
+$fs-xsmall: 1.1rem;
+
+h1 {
+  font-size: $fs-big;
+  @include breakpoint-up(large) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: $fs-medium;
+  @include breakpoint-up(large) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: $fs-small;
+}
+
+p {
+  font-size: $fs-xsmall;
+}

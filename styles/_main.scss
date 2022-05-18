@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $tertiary-color;
+  font-family: $body-text, sans-serif;
+}
+
+.container {
+  padding: 1rem 2rem;
+
+  @include breakpoint-up(medium) {
+    padding: 2rem 5rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-text, serif;
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+//utility classes
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+
+.section {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    margin-bottom: 2rem;
+  }
+}
+
+//styles
+.hero {
+  padding: 3rem 0;
+
+  &__btn {
+    margin-top: 1.5rem;
+  }
+}
+
+.project__grid {
+  text-align: left;
+  padding-top: 2rem;
+  @include container(0, 0, true);
+
+  &-item {
+    background-color: $secondary-color;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      padding: 1rem 0;
+    }
+
+    p {
+      padding-bottom: 1rem;
+    }
+
+    button {
+      margin-bottom: 1rem;
+      margin-right: 0.8rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+
+      &:hover {
+        a {
+          color: $tertiary-color;
+        }
+      }
+
+      a {
+        color: $primary-color;
+      }
+    }
+
+    @include column(3.8, large);
+  }
+}
+
+.aboutAndSkills {
+  background-color: $secondary-color;
+  @include container(0, 0, true);
+  margin: 8rem 0;
+  border-radius: 0.5rem;
+
+  &-item {
+    @include column(6, large);
+    padding: 4rem 2rem;
+
+    &:nth-child(2) {
+      border-top: 2px dashed $primary-color;
+      border-left: none;
+      @include breakpoint-up(medium) {
+        border-left: 2px dashed $primary-color;
+        border-top: none;
+      }
+    }
+  }
+}
+
+.skills-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    font-size: 4rem;
+  }
+
+  div {
+    width: 23%;
+  }
+}
+
+.contact {
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+
+  .links {
+    margin-top: 1rem;
+  }
+
+  padding-bottom: 5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondary-color;
+  padding: 2rem;
+}
+
+.social-links {
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
