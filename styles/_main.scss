@@ -105,7 +105,11 @@ a {
       }
     }
 
-    @include column(3.8, large);
+    .btns {
+      margin-top: auto
+    }
+
+    @include column(2.8, large);
   }
 }
 

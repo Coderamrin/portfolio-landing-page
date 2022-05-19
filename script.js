@@ -26,10 +26,10 @@ function addProject(project) {
         <p>
             ${description}
         </p>
-        <div>
+        <div class="btns">
         <a href=${live} target="_blank"> <button>  Live </button>
         </a> 
-            <a href=${sourceCode} target="_blank" > <button> Source Code </button> 
+        <a href=${sourceCode} target="_blank" > <button> Source Code </button> 
             </a> 
         </div> 
    </div>`;

@@ -11,7 +11,7 @@ const projectArr = [
     title: 'Library App',
     description:
       'A library app built with vanilla JavaScript and CSS. This app is a simple library app to store books you read and want to read.',
-    live: 'https://build-10-css-projects.netlify.app/',
+    live: 'https://coderamrin.github.io/library/',
     sourceCode: 'https://coderamrin.github.io/library/',
     image: './imgs/library.png',
   },
@@ -26,7 +26,7 @@ const projectArr = [
   {
     title: 'Mission Mars Game',
     description:
-      'This is a game I built with my friends for the Odin Project Game Jam. This game is a simple game where you answer a few questions and send a ship to mars to win the game.',
+      'This is a game I built with my friends for the Odin Project Game Jam. Built with JavaScript and CSS.',
     live: 'https://swthurlow.github.io/mars-mission-gamejam/',
     sourceCode: 'https://github.com/SWThurlow/mars-mission-gamejam',
     image: './imgs/marse-game.png',
@@ -41,3 +41,4 @@ const blog = [
     image: '',
   },
 ];
+ 
